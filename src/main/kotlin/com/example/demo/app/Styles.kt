@@ -1,6 +1,7 @@
 package com.example.demo.app
 
 import javafx.scene.text.FontWeight
+import sun.font.FontLineMetrics
 import tornadofx.Stylesheet
 import tornadofx.box
 import tornadofx.cssclass
@@ -16,6 +17,7 @@ class Styles : Stylesheet() {
             padding = box(10.px)
             fontSize = 20.px
             fontWeight = FontWeight.BOLD
+
         }
     }
 }

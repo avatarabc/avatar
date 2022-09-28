@@ -1,13 +1,13 @@
 package com.example.demo
 
-import com.example.demo.view.ComboxView
-import com.example.demo.view.DayOfWeekView
+import com.example.demo.bus.BusView
+import com.example.demo.view.*
 import tornadofx.*
 
 class MainView : View("Hello TornadoFX") {
 
-    override val root = stackpane {
-        add(ComboxView::class)
-        add(DayOfWeekView::class)
+    override val root = borderpane {
+        left<BusView>()
+        right<ValidateView>()
     }
 }
